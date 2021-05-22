@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=0.9.0
+Type=Application
+
+Exec=evince /usr/share/eyes17/eyes17-a4.pdf
+Icon=gnome-word.png
+
+Name=expEYES-17 Manual
+
+Comment=expEYES-17 User Manual
+Categories=Electronics;Education;Science;
+MimeType=application/x-pdf
+
+Terminal=false
+NoDisplay=false
+StartupNotify=false

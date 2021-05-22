@@ -1,0 +1,10 @@
+Package: eyes17
+Priority: extra
+Depends: python-serial(>=2.0.0), python-pyqtgraph(>=0.9.10),
+         python-scipy(>=0.13.0), python-configparser(>= 3.0.0)
+Architecture: all
+Maintainer: bpajith@gmail.com
+Version: 3.8.0
+Installed-Size: 5732
+Description: Software for EYES-17 based Science experiments. 
+

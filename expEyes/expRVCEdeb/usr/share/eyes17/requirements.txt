@@ -1,0 +1,6 @@
+pyserial>=2.0.0
+pyqtgraph>=0.9.10
+scipy>=0.13.0
+configparser>=3.0.0
+
+

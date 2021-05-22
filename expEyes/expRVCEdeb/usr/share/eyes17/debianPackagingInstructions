@@ -1,0 +1,8 @@
+To unpack a deb -> Create a new folder and sudo dpkg-deb -R original.deb newfoldername
+
+To repack a deb -> Outside the folder sudo dpkg-deb -b newfoldername modified.deb
+
+
+To uninstalll a deb -> dpkg --remove packagename
+
+To install a deb -> dpkg -i package.deb

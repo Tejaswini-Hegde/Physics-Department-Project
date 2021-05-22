@@ -1,0 +1,10 @@
+Package: eyesRVCE17
+Priority: extra
+Depends: python-serial(>=2.0.0), python-pyqtgraph(>=0.9.10),
+         python-scipy(>=0.13.0), python-configparser(>= 3.0.0)
+Architecture: all
+Maintainer: shashankholla
+Version: 0.0.1
+Installed-Size: 5732
+Description: Modded software for RVCE based on bpajith's EYES-17
+

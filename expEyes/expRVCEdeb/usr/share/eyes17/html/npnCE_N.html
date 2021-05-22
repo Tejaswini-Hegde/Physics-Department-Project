@@ -1,0 +1,97 @@
+﻿<html>
+<head>
+    <style>
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 15px;
+      }
+      
+      /* Clear floats after image containers */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      @media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+    </style>
+</head>
+
+
+
+<h2 id="schematic">Schematic</h2>
+<hr>
+
+<div class="row">
+        <div class="column">
+                <p><center>"Experiement circuit diagram"</center></p>
+                <img src="images/npn_ce_schematic.png" alt="Experiement circuit diagram" style="width:120%" height="34%">
+              </div>
+    <div class="column">
+            <p><center> "Expeyes Circuit Connections"</center></p>
+      <img src="images/npn_ce_out.png" alt="Expeyes Circuit Connections"" style="width:60%">
+    </div>
+   
+   
+  </div>
+<hr> 
+<hr>
+<h2 id="instructions">Instructions for Input</h2>
+<hr>
+<p>
+<img src="images/NPN_INGraph.png" alt="NPN INPUT Expected Graph" height="300">
+Expected Graph for NPN Transistor's Input characteristic in CE Mode
+</p>
+<hr>
+<ul>
+    <li>Make the connections as shown in the schematic</li>
+    <li>Voltage at PV1 is applied to the collector, via a 1k resistor.</li>
+    <li>The value of PV1 is incremented in steps and at each step the collector
+voltage is measured.</li>
+    <li>The Collector current is calculated from the voltage drop across the 1k resistor.</li>
+    <li>The current is calculated by the software using Kirchoff's laws in the output and input loops.</li>
+    <li>Make sure the "Use Defaults" checkbox is ticked</li>
+    <li>Run the experiment by clicking the Start button.</li>
+    <li>Once the trial is completed, you will see a "Completed plotting" message on the bottom left side of the window</li>
+    <li>You can save the value pairs by using the "Save Data" button</li>
+    <li>Now uncheck the "Use Defaults" box and run the experiment using your custom values.</li>
+    <li><b>Note:</b> V_CE must be lesser than 4.5V (Expeyes doesn't support higher voltage)</li>
+</ul>
+
+
+
+<hr>
+
+
+
+<hr>
+<h2 id="instructions">Instructions for Output</h2>
+<hr>
+
+<p>
+        <img src="images/NPN_OUTGraph.png" alt="NPN INPUT Expected Graph" height="300" >
+        Expected Graph for NPN Transistor's Output characteristic in CE Mode
+        </p>
+        <hr>
+
+<ul>
+<li>The output characteristic curve of an NPN transistor at different
+base currents are plotted.</li>
+<li>The base current is set by the voltage at PV2.</li>
+<li>Voltage at PV1 is applied to the collector, via a 1k resistor.</li>
+<li>The value of PV1 is incremented in steps and at each step the collector
+voltage is measured.</li>
+<li>The Collector current is calculated from the voltage drop across the 1k resistor.</li>
+<li>Make connections, use any NPN transistor, 2N2222 is provided with the kit.</li>
+<li>Press <strong>START</strong> to get a Vc-Ic plot for a particular Ib. Change Ib by changing PV2 volatge.</li>
+</ul>
+</html>

@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=5.0.0
+Type=Application
+
+Exec=sh -c "/usr/share/eyes17/run"
+Icon=eyes17-logo.png
+
+Name=ExpEYES-RVCE
+Comment=EXPEYES-RVCE
+
+Categories=GNOME;Application;Education;Science;
+
+Terminal=false
+NoDisplay=false
+StartupNotify=false
