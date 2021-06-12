@@ -64,7 +64,11 @@ class Expt(QWidget):
 
 		b = QPushButton(self.tr("Clear Traces"))
 		right.addWidget(b)
-		b.clicked.connect(self.clear)		
+		b.clicked.connect(self.clear)	
+
+		b = QPushButton(self.tr("Undo"))
+		right.addWidget(b)
+		b.clicked.connect(self.undo)	
 
 		self.SaveButton = QPushButton(self.tr("Save Data"))
 		self.SaveButton.clicked.connect(self.save_data)		
@@ -90,7 +94,11 @@ class Expt(QWidget):
 
 		#----------------------------- end of init ---------------
 		
-	
+	def undo(self):
+		if self.running == True:
+			self.msg(self.tr('Removed value:')+self.traces[-1])
+			self.traces.pop()
+			self.history.pop()
 
 	def fit_curve(self):
 		if self.running == True or self.data[0]==[]:
